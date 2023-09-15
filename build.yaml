@@ -14,4 +14,8 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: two_percent_milk
+    shield: card_left
+  - board: nice_nano_v2
+    shield: card_right
+  - board: nice_nano_v2
+    shield: card_dongle
