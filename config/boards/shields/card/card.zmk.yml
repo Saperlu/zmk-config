@@ -9,5 +9,3 @@ features:
   - keys
 siblings:
   - card_left
-  - card_right
-  - card_dongle
