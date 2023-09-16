@@ -1,0 +1,11 @@
+file_format: "1"
+id: gadget_futuriste_11
+name: Gadget futuriste \#11
+type: shield
+url: https://github.com/saperlu/zmk-config
+requires: [pro_micro]
+# exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - gadget_futuriste_11

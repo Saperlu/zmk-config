@@ -14,4 +14,4 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: card_left
+    shield: gadget_futuriste_11
