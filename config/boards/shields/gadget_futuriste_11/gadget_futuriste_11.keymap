@@ -28,7 +28,7 @@
             
         default {
             bindings = <
-                &kp FR_A
+                &kp FR_A    &kp FR_Z    &kp FR_E    &kp FR_R    &kp FR_T
             >;
         };
     };
