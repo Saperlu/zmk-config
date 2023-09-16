@@ -16,6 +16,7 @@
             bindings = <
                 &bt BT_CLR
                 &kp Z
+                
             >;
         };
     };
