@@ -22,11 +22,11 @@
 
 / { 
     keymap {
-            compatible = "zmk,keymap";
+        compatible = "zmk,keymap";
             
         default {
             bindings = <
-                &kp FR_A    &kp FR_Z    &kp FR_E    &kp FR_R
+                &studio_unlock    &kp FR_A    &kp FR_Z    &kp FR_E    
             >;
         };
     };
