@@ -25,9 +25,34 @@
         compatible = "zmk,keymap";
             
         default {
-            bindings = <
-                &studio_unlock    &kp FR_A    &kp FR_Z    &kp FR_E    
-            >;
+            display-name = "default";
+            bindings = 
+                < &kp LEFT_SHIFT &kp FR_Z>,
+                < &studio_unlock &kp FR_A &kp FR_E>;
+        };
+        layer_1 {
+            display-name = "layer_1";
+            bindings = 
+                < &kp LEFT_SHIFT &kp FR_Z>,
+                < &studio_unlock &kp FR_A &kp FR_E>;
+        };
+        layer_2 {
+            display-name = "layer_2";
+            bindings = 
+                < &kp LEFT_SHIFT &kp FR_Z>,
+                < &studio_unlock &kp FR_A &kp FR_E>;
+        };
+        layer_3 {
+            display-name = "layer_3";
+            bindings = 
+                < &kp LEFT_SHIFT &kp FR_Z>,
+                < &studio_unlock &kp FR_A &kp FR_E>;
+        };
+        layer_4 {
+            display-name = "layer_4";
+            bindings = 
+                < &kp LEFT_SHIFT &kp FR_Z>,
+                < &studio_unlock &kp FR_A &kp FR_E>;
         };
     };
 };
