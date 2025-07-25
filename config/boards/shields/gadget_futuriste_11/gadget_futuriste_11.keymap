@@ -12,7 +12,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include "french_keymap.h"
 
-
 &mt {
     tapping-term-ms = <201>;
     flavor = "tap-preferred";
@@ -23,19 +22,19 @@
  };
 
 / { 
-    combos {
-        compatible = "zmk,combos";
-        combo_to_layer_selection {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&sl LAYER_SELECTION>;
-        };
-        combo_studio_unlock {
-            timeout-ms = <50>;
-            key-positions = <2 4>;
-            bindings = <&studio_unlock>;
-        };
-    };
+    // combos {
+    //     compatible = "zmk,combos";
+    //     combo_to_layer_selection {
+    //         timeout-ms = <50>;
+    //         key-positions = <0 1>;
+    //         bindings = <&sl LAYER_SELECTION>;
+    //     };
+    //     combo_studio_unlock {
+    //         timeout-ms = <50>;
+    //         key-positions = <2 4>;
+    //         bindings = <&studio_unlock>;
+    //     };
+    // };
     
     keymap {
         compatible = "zmk,keymap";
@@ -43,30 +42,32 @@
         default {
             display-name = "default";
             bindings = < 
-                &kp FR_A   &kp FR_E
-                &kp LSHFT  &kp FR_Z &kp FR_R
+                &kp FR_A   &kp FR_Z &kp FR_E
+                &kp FR_Q  &kp FR_S &kp FR_D
+                &kp LSHIFT &kp SPACE &to BLUETOOTH
             >;
         };
         layer_bluetooth {
             display-name = "layer_bt";
             bindings = < 
-                &bt BT_PRV &bt BT_NXT
+                &bt BT_PRV &bt BT_NXT &kp U
                 &bt BT_CLR &bt BT_SEL 0 &bt BT_DISC 0
+                &none &kp SPACE &to DEFAULT
             >;
         };
-        layer_2 {
-            display-name = "layer_3";
-            bindings = < 
-                &kp FR_T &kp FR_U
-                &kp LSHIFT &kp FR_Y &kp FR_I
-            >;
-        };
-        layer_selection {
-            display-name = "layer_selection";
-            bindings = < 
-                &to 2   &trans
-                &to DEFAULT     &trans &to BLUETOOTH
-            >;
-        };
+        // layer_2 {
+        //     display-name = "layer_3";
+        //     bindings = < 
+        //         &kp FR_T &kp FR_U
+        //         &kp LSHIFT &kp FR_Y &kp FR_I
+        //     >;
+        // };
+        // layer_selection {
+        //     display-name = "layer_selection";
+        //     bindings = < 
+        //         &to 2   &trans
+        //         &to DEFAULT     &trans &to BLUETOOTH
+        //     >;
+        // };
     };
 };
